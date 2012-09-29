@@ -75,3 +75,5 @@ imap <C-S-Right> <ESC>:tabn<CR>
 map <C-S-Left> :tabp<CR>
 imap <C-S-Left> <ESC>:tabp<CR>
 
+" pydoc path
+let g:pydoc_cmd = 'python -m pydoc'
