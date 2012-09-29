@@ -13,6 +13,7 @@ filetype off
 if has('win32') || has('win64')
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc('$HOME/.vim/bundle/')
+  behave mswin
 else
   " Usual quickstart instructions
   set rtp+=~/.vim/bundle/vundle/
@@ -45,10 +46,11 @@ let g:Powerline_symbols = 'fancy'
 filetype plugin indent on
 filetype plugin on
 
-" Set Indent
+" Set Indent and tab
 set autoindent
 set ts=4
 set expandtab
+autocmd FileType python setlocal et sta sw=4 sts=4
 
 " always show status bar
 set ls=2
@@ -77,3 +79,22 @@ imap <C-S-Left> <ESC>:tabp<CR>
 
 " pydoc path
 let g:pydoc_cmd = 'python -m pydoc'
+
+" evernote for vim
+map <leader>es :EvervimSearchByQuery 
+map <leader>el :EvervimNotebookList<CR>
+map <leader>ec :EvervimCreateNote<CR>
+"" Use Markdown.
+let g:evervim_usemarkdown = 1
+
+" Python Folding
+set foldmethod=indent
+set foldlevel=99
+
+" Run Python Script
+map <F5> :w<cr>:!python %<cr>
+
+" Comment
+map <F11> :s/^/#/g<cr>/lkjlkjlkjlk<cr>
+map <F12> :s/^#//g<cr>/lkjlkjlkjlk<cr>
+
