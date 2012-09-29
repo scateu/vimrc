@@ -56,3 +56,12 @@ set ls=2
 " Set Gui font
 set guifont=宋体\ 11
 "colorscheme fisa
+
+" Short Cut
+" NerdTree
+map <F3> :NERDTreeToggle<CR>
+" Tagbar
+map <F4> :TagbarToggle<CR>
+" autofocus on Tagbar open
+let g:tagbar_autofocus = 1
+
