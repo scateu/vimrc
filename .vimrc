@@ -65,3 +65,13 @@ map <F4> :TagbarToggle<CR>
 " autofocus on Tagbar open
 let g:tagbar_autofocus = 1
 
+" tab navigation
+map tn :tabn<CR>
+map tp :tabp<CR>
+map tm :tabm<CR>
+map tt :tabnew
+map <C-S-Right> :tabn<CR>
+imap <C-S-Right> <ESC>:tabn<CR>
+map <C-S-Left> :tabp<CR>
+imap <C-S-Left> <ESC>:tabp<CR>
+
