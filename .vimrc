@@ -39,6 +39,9 @@ Bundle 'fisadev/FixedTaskList.vim'
 Bundle 'Lokaltog/vim-powerline'
 " fisa theme
 "Bundle 'fisadev/fisa-vim-colorscheme'
+" Comment \cc \cu
+Bundle 'scrooloose/nerdcommenter'
+
 
 
 let g:Powerline_symbols = 'fancy'
@@ -94,7 +97,6 @@ set foldlevel=99
 " Run Python Script
 map <F5> :w<cr>:!python %<cr>
 
-" Comment
-map <F11> :s/^/#/g<cr>/lkjlkjlkjlk<cr>
-map <F12> :s/^#//g<cr>/lkjlkjlkjlk<cr>
 
+" TODO List
+map <F2> :TaskList<CR>
