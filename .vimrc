@@ -1,5 +1,4 @@
 syntax on
-color murphy
 set encoding=utf8
 " set the menu & the message to English
 set langmenu=en_US
@@ -25,6 +24,8 @@ endif
 " Better file browser
 Bundle 'scrooloose/nerdtree'
 
+"pyte color scheme
+Bundle 'pyte'
 Bundle 'gmarik/vundle'
 Bundle 'kakkyz81/evervim'
 " Search and read python documentation
@@ -59,7 +60,7 @@ autocmd FileType python setlocal et sta sw=4 sts=4
 set ls=2
 
 " Set Gui font
-set guifont=宋体\ 11
+set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
 "colorscheme fisa
 
 " Short Cut
@@ -100,3 +101,6 @@ map <F5> :w<cr>:!python %<cr>
 
 " TODO List
 map <F2> :TaskList<CR>
+
+"colorscheme pyte
+color murphy
