@@ -43,6 +43,9 @@ Bundle 'Lokaltog/vim-powerline'
 " Comment \cc \cu
 Bundle 'scrooloose/nerdcommenter'
 
+" vim markdown
+Bundle 'tpope/vim-markdown'
+
 
 
 let g:Powerline_symbols = 'fancy'
@@ -65,9 +68,9 @@ set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
 
 " Short Cut
 " NerdTree
-map <F3> :NERDTreeToggle<CR>
+map <C-3> :NERDTreeToggle<CR>
 " Tagbar
-map <F4> :TagbarToggle<CR>
+map <C-4> :TagbarToggle<CR>
 " autofocus on Tagbar open
 let g:tagbar_autofocus = 1
 
@@ -104,3 +107,4 @@ map <F2> :TaskList<CR>
 
 "colorscheme pyte
 color murphy
+
